@@ -341,7 +341,7 @@ footer span{
         display: none;
     }
     .pricing{
-        height: 550px;
+        height: 900px;
     }
     .pricing_blocks{
         flex-direction: column;
