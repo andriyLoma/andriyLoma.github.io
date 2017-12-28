@@ -353,11 +353,6 @@ footer span{
         width: 95%;
     }
 }
-@media screen and (max-width: 1100px) {
-    .pricing{
-        height: 950px;
-    }
-}
 @media screen and (max-width: 850px) {
     .features{
         height: 750px;
