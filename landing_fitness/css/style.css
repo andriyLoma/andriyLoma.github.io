@@ -377,9 +377,6 @@ footer span{
     footer{
         padding-top: 50px;
     }
-    .pricing{
-        height: 2500px;
-    }
 }
 @media screen and (max-width: 600px) {
     .features{
@@ -397,6 +394,10 @@ footer span{
     .header div{
         margin-right: 0px;
     }
+    .pricing{
+        height: 1500px;
+    }
+    
 }
 @media screen and (max-width: 405px) {
     .features{
