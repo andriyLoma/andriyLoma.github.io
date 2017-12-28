@@ -351,10 +351,11 @@ footer span{
     }
     .pricing_component{
         width: 95%;
+        height: 25%
     }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1000px){
     .pricing{
         height: 1650px;
     }
