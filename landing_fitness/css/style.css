@@ -341,45 +341,22 @@ footer span{
         display: none;
     }
     .pricing{
-        height: 850px;
+        height: 2850px;
     }
     .pricing_blocks{
         flex-direction: column;
         align-items: stretch;
         justify-content: flex-start;
         margin-left: 50px;
-        height: 99%;
     }
     .pricing_component{
         width: 95%;
-        height: 25%;
-    }
-    .contact_us{
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: flex-start;
-        height: 550px;
-    }
-    .info{
-        margin-left: 50px;
-        width: 100%;
-    }
-    .contact_us form{
-        margin-left: 50px;
-    }
-    .but_test{
-        height: 100px;
-        width: 75%;
-    }
-    footer{
-        padding-top: 50px;
     }
 }
 @media screen and (max-width: 850px) {
     .features{
         height: 750px;
     }
-/*
     .contact_us{
         flex-direction: column;
         align-items: stretch;
@@ -400,7 +377,6 @@ footer span{
     footer{
         padding-top: 50px;
     }
-*/
 }
 @media screen and (max-width: 600px) {
     .features{
