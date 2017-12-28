@@ -355,7 +355,7 @@ footer span{
 }
 @media screen and (max-width: 1100px){
     .pricing{
-        display: none;
+        height: 1350px;
     }
     
 }
