@@ -377,6 +377,9 @@ footer span{
     footer{
         padding-top: 50px;
     }
+    .pricing{
+        height: 1500px;
+    }
 }
 @media screen and (max-width: 600px) {
     .features{
