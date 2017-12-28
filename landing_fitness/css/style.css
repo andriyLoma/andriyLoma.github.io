@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+}
+.header{
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #201f21 linear-gradient(#272727, #050208);
+    color: white;
+    z-index: 999;
+}
+.header div{
+    font-size: 45px;
+}
+.header ul{
+    list-style: none;
+}
+.header li{
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+.header li:hover{
+    background: indianred linear-gradient(#d05c5c, #a82424);
+}
+
+.home{
+    height: 850px;
+    background: url(/img/shutterstock_484783420.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    align-items:flex-end;
+    color: white;
+}
+.main{
+    margin: 5%;
+    font-size: 30px;
+    padding: 5px;
+    background: #201f21 linear-gradient(#272727, #050208);
+    text-align: center;
+    width: 350px;
+    padding: 10px;
+}
+.secondly{
+    font-size: 24px;
+}
+.telefon_number{
+    position: relative;
+    top: -76.1%;
+    left: 45%;
+    background: indianred linear-gradient(#d05c5c, #a82424);
+    font-size: 24px;
+    padding: 12px;
+    z-index: 1;
+}
+.telefon_number span{
+    margin-left: 10px;
+}
+
+.features{
+    padding-top: 70px;
+    width: 100%;
+    height: 450px;
+    font-size: 22px;
+    text-align: center;
+}
+.features span{
+    color: firebrick;
+    font-weight: bold;
+}
+.features h4{
+    color: gray;
+    font-style: italic;
+}
+.features_block{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+.features_component{
+    width: 20%;
+}
+.features_component p{
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.our_team{
+     padding-top: 70px;
+    width: 100%;
+    height: 450px;
+    font-size: 22px;
+    text-align: center;
+    background-color: gainsboro;
+}
+.trainers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+.trainers div{
+    box-shadow: inset 0 2px 2px 2px rgba(0,0,0,.4);
+    width: 20%;
+    padding: 25px;
+    background-color: white;
+    padding-bottom: 20px;
+}
+.our_team img{
+    width: 100%;
+    height: 250px;
+}
+
+.gallery{
+    width: 100%;
+    height: 750px;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 50px;
+}
+.gallery_img{
+    display: flex;
+    justify-content:space-around;
+    margin: 25px 0;
+}
+.gallery_img img{
+    width: 25%;
+    height: 300px;
+}
+
+.pricing{
+    width: 100%;
+    height: 450px;
+    font-size: 22px;
+    text-align: center;
+    background: #c13535;
+    padding-top: 50px;
+    color: white;
+}
+.pricing_blocks{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pricing_component{
+    width: 30%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.33);
+    background: #c72b2b;
+}
+.pricing_component div{
+    width: 50%;
+    display: inline-block;
+    
+}
+.pricing_component ul{
+    border-left: 1px solid white;
+    padding-left: 15px;
+    list-style: none;
+    text-align: left;
+}
+.border_right i{
+    font-size: 60px;
+}
+.pricing_component_name{
+    font-size: 26px;
+    margin: 10px 0;
+    display: block;
+}
+.middle{
+    border: 2px solid white;
+    background: #c13535;
+}
+.pricing_component_price{
+    font-size: 30px;
+    display: block;
+}
+.contact_us{
+    width: 100%;
+    height: 450px;
+    background: #201f21 linear-gradient(#272727, #050208);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.info{
+    width: 40%;
+}
+h4{
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+.info span{
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+}
+form{
+    width: 40%;
+}
+.text_field {
+    width: 60%;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  border: 2px solid white;
+  border-radius: 6px;
+  background: #201f21 linear-gradient(#272727, #050208);
+  color: white;
+  box-shadow: 
+    inset 0 2px 0 rgba(0,0,0,.2), 
+    0 0 4px rgba(0,0,0,0.1);
+}
+.text_field:focus { 
+  outline: none;
+  box-shadow: 
+    inset 0 2px 0 rgba(0,0,0,0.2), 
+    0 0 4px rgba(0,0,0,0.1),
+    0 0 6px 3px #90b7e5;
+}
+.but_test {
+   width: 63.5%;
+    height: 50px;
+    color: white;
+  border-radius: 6px;
+    font-size: 20px;
+    padding: 10px;
+	outline: none;
+	background: firebrick; 
+	cursor: pointer;
+	border: 21px;
+	border-radius: 5px;
+	text-align: center;
+    transition: all 0.2s ease-out;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.but_test:hover  { 
+background: white;
+    color: #2f2b2b;
+}
+.but_test:active {
+	position: relative;
+	top: 1px;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background: #000000 linear-gradient(#050208, #000000);
+    color: rgba(219, 215, 215, 0.54);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+footer span{
+    margin-right: 50px;
+}
+#scroll_top_button{
+    font-size: 50px;
+    cursor: pointer;
+    position: fixed;
+    right: 2%;
+    bottom:5%;
+    background-color: rgba(240, 248, 255, 0.00);
+    border: none;
+    color: indianred;
+    z-index: 100;
+}
+#scroll_top_button:hover{
+    color: #534444;    
+}
+#scroll_top_button:active{
+    bottom: 4.5%;    
+}
+@media screen and (max-width: 1200px) {
+    .home{
+        display: none;
+    }
+    .header div{
+        margin-right: 50px;
+    }
+    .features{
+        padding-top: 150px;
+        height: 650px;
+    }
+    .features_block{
+    flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+    .features_component{
+        width: 100%;
+    }
+    .our_team{
+        height: 1400px;
+    }
+    .our_team h2{
+        text-align: left;
+        margin-left: 150px;
+    }
+    .trainers{
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        margin-left: 50px;
+    }
+    .trainers div{
+        width: 60%;
+    }
+    .gallery{
+        display: none;
+    }
+    .unvisible_mobile{
+        display: none;
+    }
+    .pricing{
+        height: 850px;
+    }
+    .pricing_blocks{
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        margin-left: 50px;
+    }
+    .pricing_component{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 850px) {
+    .features{
+        height: 750px;
+    }
+    .contact_us{
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        height: 550px;
+    }
+    .info{
+        margin-left: 50px;
+        width: 100%;
+    }
+    .contact_us form{
+        margin-left: 50px;
+    }
+    .but_test{
+        height: 100px;
+        width: 75%;
+    }
+    footer{
+        padding-top: 50px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .features{
+        height: 950px;
+        padding-top: 300px;
+    }
+    .header{
+        height: 300px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .features{
+        height: 1050px;
+    }
+    .header div{
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width: 405px) {
+    .features{
+        height: 1250px;
+    }
+}

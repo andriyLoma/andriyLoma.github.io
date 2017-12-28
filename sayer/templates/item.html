@@ -1,0 +1,17 @@
+<div class="item">
+    <div class="header">
+        <a href="#/home"><button class="buttonPurple buttonBack"><i class="fa fa-arrow-left" aria-hidden="true"></i></button></a>
+        <h2>{{item.current_item.name}}</h2>
+    </div>
+    <ul>
+        <li ng-repeat='key in item.current_item.comments'>
+            <span class="comment_name">{{key.text}}</span>
+            <span class="date_created">{{key.date_created}}</span>
+            <button ng-click='item.removeComment(key.comment_id)' class="buttonDelete cross"></button>
+        </li>
+    </ul>
+    <div class="add_comment">
+        <input type="text" class="inputCreate" placeholder="create new comment" ng-model='item.comment_text'>
+        <button ng-click='item.add_comment()' class="buttonPurple"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+    </div>
+</div>

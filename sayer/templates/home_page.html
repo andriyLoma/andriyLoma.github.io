@@ -1,0 +1,26 @@
+<div class="home">
+   
+    <div class="header">
+        <h1>Sayer</h1>
+    </div>
+    
+    <ul>
+        <li ng-repeat='item in home.items track by $index'>
+           <span class="home_item_name" ng-click="home.choose_item(item.id)">{{item.name}}</span>
+            <button class='but_test' ng-click="home.changing_item(item); $parent.show_edit_item = !$parent.show_edit_item"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+            <button ng-click="home.removeItem(item.id)" class="buttonDelete cross"></button>
+            <span><i class="fa fa-comment" aria-hidden="true"></i><span class="home_number_comments">{{item.comments.length}}</span></span>
+        </li>
+    </ul>
+    <div class="btn_plus">
+    <a href="#/createItem"><button class="button4">+</button></a>
+    </div>
+           
+            <div class="popup__overlay" ng-show="show_edit_item" ng-click="show_edit_item=!show_edit_item"></div>
+           <div class="popup3" ng-show="show_edit_item">
+             <a href="" class="popup__close" ng-click="show_edit_item=!show_edit_item">X</a>
+              <input type="text" class="text_field popup_field" placeholder="change name" ng-model='home.change_item.name'> <br>
+             <br><button class="but_test popup_button" ng-click='home.change_item_func(); show_edit_item = !show_edit_item'>Change</button> 
+           </div>
+           
+</div><!--home-->
