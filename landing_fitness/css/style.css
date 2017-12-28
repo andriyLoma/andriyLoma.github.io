@@ -37,7 +37,7 @@
 
 .home{
     height: 850px;
-    background: url(/img/shutterstock_484783420.jpg) no-repeat;
+/*    background: url(/img/shutterstock_484783420.jpg) no-repeat;*/
     background-size: cover;
     width: 100%;
     display: flex;
