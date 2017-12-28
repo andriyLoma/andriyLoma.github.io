@@ -341,7 +341,7 @@ footer span{
         display: none;
     }
     .pricing{
-        height: 900px;
+        height: 850px;
     }
     .pricing_blocks{
         flex-direction: column;
@@ -352,6 +352,12 @@ footer span{
     .pricing_component{
         width: 95%;
     }
+}
+@media screen and (max-width: 1100px){
+    .pricing{
+        display: none;
+    }
+    
 }
 @media screen and (max-width: 850px) {
     .features{
