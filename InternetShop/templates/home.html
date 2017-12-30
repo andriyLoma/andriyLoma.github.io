@@ -1,0 +1,47 @@
+<div class="home">
+   <h1>Акційний товар</h1>
+    <div id="slider">
+      <div id="polosa">
+      
+      <div class="imgSlide" ng-repeat='key in first.products | CatFilter: first.value2'>
+            <img src="{{key.photo}}" alt="" style="width:75%;height:100%;"><br>
+            <div class="slideLeftSide">
+            <h2>{{key.name}}</h2>
+            <p class="price_number">{{key.price}}$</p>
+            <p>{{key.about}}</p>
+              <button class="btn btn-danger" ng-click='first.addToChart(key.id)'>додати у кошик</button>
+          </div>
+    </div>
+       </div>
+   </div>
+<div>
+   <h2>Оновленні пропозиції</h2>
+<div class="homeProducts">
+   <div class="products" ng-repeat='key in first.products | CatFilter: first.value'>
+<!--
+            <h4>{{key.name}}</h4>
+            <p>{{key.price}}$</p>
+-->
+            <img src="{{key.photo}}" alt="" style="width:100%;height:55%;">
+            <h4>{{key.name}}</h4>
+            <p class="price_number" style="font-size:16pt;">{{key.price}}$</p>
+             <button class="btn btn-lg btn-danger" style="width:100%;height:15%;padding:0px;margin-top:15px;" ng-click='first.showProd(key.id)'>Переглянути</button>
+    </div>
+    </div>
+  
+   <button class="btn btn-primary" ng-click='first.goToShop()'>Зробити покупку</button><br><br>
+</div>
+<div>
+      <h1>Доставка по Україні з оплатою готівкою при отриманні замовлення</h1><br>
+<ol>
+    <li>Зробіть замовлення на сайті</li>
+    <li>Отримайте номер SMS із номером експрес-накладної</li>
+    <li>Відстежуйте статус посилки на сайті компанії "Нова пошта"</li>
+    <li>При отриманні відправлення ви получите SMS від компанії "Нова пошта"</li>
+    <li>Відвідайте відділення "Нова пошта" або дочекайтеся курєрської доставки</li>
+    <li>Перевірте товар на місці</li>
+    <li>Оплатіть вартість товару</li>
+    <li>Дякуємо за покупку!</li>
+</ol>
+    </div>
+</div>

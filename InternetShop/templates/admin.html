@@ -1,0 +1,88 @@
+<div class="container">
+	<div class="row">
+		
+<!--        edit products-->
+        <div class="col-md-12">
+        <h4>Table of the products</h4>
+        
+        <input type="text" class="form-control" placeholder="name of the product" ng-model='admin.nameProduct'>
+          <input type="text" class="form-control" placeholder="price of the product" ng-model='admin.priceProduct'>
+          <input type="text" class="form-control" placeholder="about of the product" ng-model='admin.description'>
+          <input type="text" class="form-control" placeholder="photo of the product" ng-model='admin.photo'>
+          <input type="text" class="form-control" placeholder="category of the product" ng-model='admin.categoryProduct'>
+           <button type="button" class="btn btn-success" ng-click='admin.addProduct()'>Add</button>
+           <br>
+           <br><br>
+           
+        <div class="table-responsive">
+              <table id="mytable" class="table table-bordred table-striped" style="width:82.5%;">
+                
+                   <thead>
+                    <th>Name</th>
+                     <th>Price</th>
+                      <th style="text-align:right;">Edit</th>
+                       <th style="text-align:right;">Delete</th>
+                   </thead>
+    <tbody>
+    
+    <tr ng-repeat='item in admin.products'>
+    <td>{{item.name}}</td>
+    <td>{{item.price}}</td>
+   
+    <td style="text-align:right;"><button class="btn btn-primary btn-xs" ng-click='admin.editProduct(item)' ><span class="glyphicon glyphicon-pencil"></span></button></td>
+    <td style="text-align:right;"><button class="btn btn-danger btn-xs" ng-click='admin.remove(item.id)'><span class="glyphicon glyphicon-trash"></span></button></td>
+    </tr>
+    
+    </tbody>      
+</table>
+           <div class="col-md-12" id="unvissibleProduct">
+              <input type="text" class="form-control" placeholder="change name" ng-model='admin.changeProduct.name'> 
+              <input type="text" class="form-control" placeholder="change price" ng-model='admin.changeProduct.price'> 
+              <input type="text" class="form-control" placeholder="change description" ng-model='admin.changeProduct.about'> 
+              <input type="text" class="form-control" placeholder="change photo" ng-model='admin.changeProduct.photo'> 
+              <input type="text" class="form-control" placeholder="change category" ng-model='admin.changeProduct.idCateg'> 
+             <button type="button" class="btn btn-success" ng-click='admin.changeProductValues(id)'>Change</button> 
+             <br><br><br>
+           </div>
+            </div>
+        </div>        
+        
+<!--        edit category-->
+        <div class="col-md-12">
+        <h4>Table of the categories</h4>
+        
+        <input type="text" class="form-control" placeholder="id of the category" ng-model='admin.idCategory'>
+          <input type="text" class="form-control" placeholder="name of the category" ng-model='admin.nameCategory'>
+           <button type="button" class="btn btn-success" ng-click='admin.addCategory()'>Add</button>
+           <br><br><br>
+        <div class="table-responsive">
+              <table id="mytable" class="table table-bordred table-striped" style="width:82.5%;">
+                
+                   <thead>
+                    <th>id</th>
+                     <th>Name</th>
+                      <th style="text-align:right;">Edit</th>
+                       <th style="text-align:right;">Delete</th>
+                   </thead>
+    <tbody>
+    
+    <tr ng-repeat='item in admin.category'>
+    <td>{{item.id}}</td>
+    <td>{{item.name}}</td>
+   
+    <td style="text-align:right;"><button class="btn btn-primary btn-xs" ng-click='admin.editCategory(item)' ><span class="glyphicon glyphicon-pencil"></span></button></td>
+    <td style="text-align:right;"><button class="btn btn-danger btn-xs" ng-click='admin.removeCat(item.id)'><span class="glyphicon glyphicon-trash"></span></button></td>
+    </tr>
+    
+    </tbody>      
+</table>
+           <div class="col-md-12" id="unvissibleCategory">
+              <input type="text" class="form-control" placeholder="change id" ng-model='admin.changeCategory.id'> 
+              <input type="text" class="form-control" placeholder="change name" ng-model='admin.changeCategory.name'> 
+             <button type="button" class="btn btn-success" ng-click='admin.changeCategoryValues(id)'>Change</button> 
+           </div>
+            </div>
+        </div>
+        
+        </div>
+    </div>

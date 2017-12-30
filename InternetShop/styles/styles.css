@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    width: 100%;
+    min-height: 100px;
+        background-color: #213136;
+    font-size: 16pt;
+    margin-bottom: 50px;
+}
+header img{
+    float: left;
+    margin: 1.5% 0 0 9%;
+}
+
+.menuHeader li{
+        margin: 8% 2% 2% 0;
+}
+ul{
+    list-style: none;
+    width: 35%;
+    margin-left: 2%;
+    float: left;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    padding: 5px;
+    color: aliceblue;
+}
+ul li a:hover{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+.btn_admin{
+    width: 15%;
+    font-size: 12pt;
+    margin: 3% 5% 2% 12%;
+    color: aliceblue;
+    background-color: #213136;
+    border: none;
+}
+.btn_admin a:hover{
+    text-decoration: none;
+}
+.btn_admin:hover{
+    background-color: white;
+    color: black;
+}
+.formContact{
+    width:45%;
+    float: right;
+    margin-right: 5%;
+}
+.textContact{
+    width: 30%;
+    color: black;
+    font-size: 16pt;
+    margin: 0px 20px 0 100px;
+    float: left;
+}
+.textContactContactUS img{
+    width: 45%;
+}
+.textContact i{
+    margin-right: 15px;
+}
+.textContact span{
+    margin-right: 15px;
+}
+.contactLeft{
+    width: 45%;
+    float: left;
+    margin-left: 5%;
+}
+.contactUs{
+    min-height:500px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}    
+
+.home h1{
+    text-align: center;
+    color: black;
+}
+.home h2{
+    color: black;
+    text-align: center;
+}
+.home .btn-primary{
+    width: 17%;
+    height: 50px;
+    margin-left: 45%;
+    font-size: 14pt;
+}
+.home ol{
+    color: black;
+    margin-left: 5%;
+    font-size: 14pt;
+}
+.shop{
+    min-height: 500px;
+    padding: 0 10%;
+}
+.homeProducts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.products{
+    background-color: gainsboro;
+    display: inline-block;
+    margin: 6px;
+    padding: 5px;
+    width: calc(95%/5);
+    height: 320px;
+    text-align: center;
+    color: black;
+}
+.viewProduct{
+    width: 70%;
+    height: 500px;
+    margin: 0 auto;
+}
+.viewProduct_left{
+    width: 23%;
+    height: 500px;
+    float: right;
+    color: black;
+    font-size: 20pt;
+    margin-left: 2%;
+}
+.category{
+    padding: 3px;
+}
+.category ul{
+    width: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    float: left;
+}
+.category ul li{
+    padding: 5px 10px;
+    cursor: pointer;
+     background-color: gainsboro;
+    border-radius: 15px;
+    font-size: 14pt;    
+}
+.category ul li:hover{
+    background-color: black;
+    color: white;
+}
+#btnShop{
+    margin-left: 20%;
+    color: black;
+     padding: 5px 10px;
+    border: 0;
+     background-color: gainsboro;
+    border-radius: 15px;
+    font-size: 14pt;   
+}
+#btnShop:hover{
+    background-color: black;
+    color: white;
+}
+.chart{
+    position: absolute;
+    top: 4.5%;
+    right: 1%;
+    color: white;
+    padding: 5px;
+}
+
+.chart:hover{
+    background-color: white;
+    color: black;
+}
+.slideLeftSide{
+    width: 25%;
+    font-size: 18pt;
+    text-align: center;
+}
+.imgSlide img{
+    float: left;
+}
+.imgSlide{
+            width: 1000px;
+            height: 500px;
+        }
+        #slider{
+            width: 1000px;
+            height: 500px;
+            border: 5px double black;
+            margin: 50px auto;
+            overflow: hidden;
+        }
+        #polosa{
+            width: 3000px;
+            position: relative;
+            transition: all ease 1s;
+            left: 0;
+        }
+        #polosa div{
+            float: left;
+        }
+        #polosa::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+.footerText{
+    color: white;
+    font-size: 16pt;
+}
+.sugges{
+    min-height: 300px;
+}
+.sugges h4{
+    text-align: center;
+}
+.txt{
+    float: left;
+}
+.sugges .btn{
+    margin: 4.2% 0;
+}
+.sugges h1{
+    text-align: center;
+}
+.suggesRepeat{
+   margin: 0 2%;
+}
+.suggesRepeat span{
+    font-size: 16pt;
+}
+.price_number{
+    color: green;
+}
+
+input{
+    color: black;
+}
+
+#unvissibleProduct{
+    display: none;
+}
+#unvissibleCategory{
+    display: none;
+}
+
+
+@media screen and (max-width:1024px) {
+    #slider{
+        display: none;
+    }
+    .home h1{
+        display: none;
+    }
+    .products{
+        width: 150px;
+    }
+    .category{
+        padding: 0;
+        margin-left: 115px;
+    }
+    .homeProducts{
+        display: inline-block;
+    }
+    .home .btn-primary{
+        width: 200px;
+        margin-left: 20%
+    }
+    .textContact{
+        display: block;
+    }
+    .textContactContactUS h1{
+        display: block;
+        width: 40%;
+    }
+    .textContactContactUS img{
+        display: block;
+        width: 60%;
+    }
+    .textContactContactUS{
+        min-height: 500px;
+    }
+    .contactLeft{
+        float: none;
+    }
+    .clearfix{
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .formContact{
+        width: 100%;
+    }
+}
+
+.form-control{
+   width: 80%;
+    margin: 2%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+footer ul,li{
+    padding:0;
+    margin:0;
+}
+footer li{
+    list-style-type:none;
+}
+
+
+
+
+footer { background-color:#0c1a1e; min-height:350px; font-family: 'Open Sans', sans-serif; margin-top: 50px;}
+.footer-col { margin-top:50px; }
+.logofooter { margin-bottom:10px; font-size:30px; color:#fff; font-weight:700;}
+
+.footer-col p { color:#fff; font-size:18px; font-family: 'Open Sans', sans-serif; margin-bottom:15px;}
+.footer-col p i { width:20px; color:#999;}
+
+.footer-ul { list-style-type:none;  padding-left:0; margin-left:2px;}
+.footer-ul li { line-height:29px; font-size:18px;}
+.footer-ul li a { color:#a0a3a4; transition: color 0.2s linear 0s, background 0.2s linear 0s; }
+.footer-ul i { margin-right:10px;}
+.footer-ul li a:hover {transition: color 0.2s linear 0s, background 0.2s linear 0s; color:#ff670f; }
+
+ .copyright { min-height:40px; background-color:#000000;}
+ .copyright p { text-align:left; color:#FFF; padding:10px 0; margin-bottom:0;}
+ .heading7 { font-size:30px; font-weight:700; color:#d9d6d6; margin-bottom:22px;}
+ .post p { font-size:18px; color:#FFF; line-height:20px;}
+ .post p span { display:block; color:#8f8f8f;}
+ .bottom_ul { list-style-type:none; float:right; margin-bottom:0;}
+ .bottom_ul li { float:left; line-height:40px;}
+ .bottom_ul li:after { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}
+ .bottom_ul li a { color:#FFF;  font-size:12px;}
+
+ .menu {
+            width: 150px;
+            margin: auto;
+        }
+        
+        .menu__item {
+            list-style: none;
+            display: inline-block;
+            //margin-left: 100px;
+        }
+        
+        .menu__link {
+            display: block;
+            height: 33px;
+            width: 33px;
+            background: url(/InternetShop/sprite.png) no-repeat;
+            transition: 1s;
+        }
+        .twitter {
+            background-position: -33px 0;
+        }
+        
+        .google {
+            background-position: -66px 0;
+        }
+        
+        .linkedin {
+            background-position: -99px 0;
+        }
+        
+        .facebook:hover {
+            background-position: 0 -33px;
+        }
+        
+        .twitter:hover {
+            background-position: -33px -33px;
+        }
+        .google:hover {
+            background-position: -66px -33px;
+        }
+        .linkedin:hover {
+            background-position: -99px -33px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }

@@ -1,0 +1,60 @@
+<div class="contactUs">
+<div class="contactLeft">
+<h3>Кількість товарів у кошику: {{cont.chartProducts.length}}</h3>
+<h3>Сумма: {{cont.totalPrice.price}}$</h3>
+
+
+<div class="table-responsive">
+              <table class="table table-bordred" style="width:80%;">
+                
+                   <thead>
+                   <tr>
+                    <th>Фото</th>
+                     <th>Товар</th>
+                     <th>Ціна</th>
+                       <th>Кі-сть</th>
+                       </tr>
+                   </thead>
+    <tbody>
+    
+    <tr ng-repeat='product in cont.chartProducts'>
+    <td><img src="{{product.photo}}" alt="" style="width:50px;height:50px;"></td>
+    <td>{{product.name}}</td>
+    <td class="price_number">{{product.price}}$</td>
+    <td width="60">{{product.count}}</td>
+    </tr>
+    </tbody>      
+</table>
+          
+            </div>
+            </div>
+<div class="clearfix">
+<form class="formContact" name="userForm" ng-submit="cont.submitForm()" novalidate> 
+
+ <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }"> 
+     <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email" ng-model='cont.email'> 
+      <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+     </div>  
+     
+     <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">   
+      <input type="text" name="name" class="form-control" placeholder="Імя" ng-model='cont.name' required> 
+      <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">Your name is required.</p>
+       </div> 
+       
+       <div class="form-group" ng-class="{ 'has-error' : userForm.username.$invalid && !userForm.username.$pristine }">   
+      <input type="text" name="username" class="form-control" placeholder="Прізвище" ng-model='cont.sname' ng-minlength="3" ng-maxlength="8">
+       <p ng-show="userForm.username.$error.minlength" class="help-block">Username is too short.</p>
+            <p ng-show="userForm.username.$error.maxlength" class="help-block">Username is too long.</p>
+       </div> 
+              
+            <textarea class="form-control" rows="3" placeholder="Повідомлення" ng-model='cont.message'></textarea> 
+             <br> 
+    <button type="submit" style="margin-left:2%;" class="btn btn-danger" ng-click='cont.send()' ng-disabled="userForm.$invalid">Відправити</button>
+               </form> 
+
+    </div>
+</div>
+
+ 
+ <h1 style="text-align:center;">Дякуємо за покупку!</h1>
+ 
