@@ -2,14 +2,10 @@ app.controller('homeCtrl',['$scope','$window','UserService','$location',function
     var vm=this;
     vm.items=[];
     vm.change_item={};
-    vm.removeItem=function(id){
+    vm.show_remove=function(){};
+    vm.removeItem=function(id,index){
+        vm.items.splice(index, 1);
         UserService.remove_item(id);
-    }
-    vm.changing_item=function(obj){
-        vm.change_item=obj;
-    }
-    vm.change_item_func=function(){
-        UserService.change_item(vm.change_item);
     }
     vm.choose_item=function(id){
         UserService.set_current_item(id);

@@ -26,8 +26,7 @@ app.factory('UserService',['$location',function($location){
         add_comment:function(obj){
             var new_comment={
                 comment_id: Date.now(),
-                text: obj.text,
-                date_created: obj.date
+                text: obj.text
             }
             for (var i in items){
                 if(items[i].id == obj.item_id){
@@ -48,14 +47,6 @@ app.factory('UserService',['$location',function($location){
             for(var i in current_item.comments){
                 if(current_item.comments[i].comment_id == id){
                     current_item.comments.splice(i,1);
-                }
-            }
-            this.updateItems();
-        },
-        change_item:function(change_item){
-            for (var i in items){
-                if(items[i].id == change_item.id){
-                    items.splice(i,1,change_item);
                 }
             }
             this.updateItems();

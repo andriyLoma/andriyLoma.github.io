@@ -4,13 +4,13 @@ app.controller('itemCtrl',['$scope','UserService',function($scope,UserService){
     vm.add_comment=function(){
         vm.obj={
             text:vm.comment_text,
-            date:$scope.date,
             item_id:current_item.id
         }
         UserService.add_comment(vm.obj);
         vm.comment_text='';
     }
-    vm.removeComment=function(id){
+    vm.removeComment=function(id, index){
+        vm.current_item.comments.splice(index, 1);
         UserService.remove_comment(id);
     }
     vm.init=function(){

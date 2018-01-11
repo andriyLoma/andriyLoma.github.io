@@ -4,14 +4,13 @@
         <h2>{{item.current_item.name}}</h2>
     </div>
     <ul>
-        <li ng-repeat='key in item.current_item.comments' ng-swipe-right="item.removeComment(key.comment_id)">
+        <li class="odd_even" ng-repeat='key in item.current_item.comments track by $index' ng-swipe-right="item.removeComment(key.comment_id, $index)" ng-class-even="'striped'">
+            <div class="item_block"></div>
             <span class="comment_name">{{key.text}}</span>
-            <span class="date_created">{{key.date_created}}</span>
-            <button ng-click='item.removeComment(key.comment_id)' class="buttonDelete"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
         </li>
     </ul>
-    <div class="add_comment">
-        <input type="text" class="inputCreate" placeholder="New comment title.." ng-model='item.comment_text'>
-        <button ng-click='item.add_comment()' class="buttonPurple" id="newColor2">></button>
+    <div class="add_comment_item">
+        <input type="text" class="inputComment" placeholder="New comment goes here.." ng-model='item.comment_text'>
+        <button ng-click='item.add_comment()' class="comment_buttonPurple" id="newColor2">></button>
     </div>
 </div>

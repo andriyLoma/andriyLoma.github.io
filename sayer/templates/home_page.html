@@ -1,21 +1,19 @@
 <div class="home">
     <div class="header">
-        <h1>Sayer</h1>
+        <h1>Sayer    
+        <span class="header_span">World's most used time waster</span></h1>
     </div>
     <ul>
-        <li ng-repeat='item in home.items track by $index' ng-swipe-right="home.removeItem(item.id)">
-            <button class='but_edit' ng-click="home.changing_item(item); $parent.show_edit_item = !$parent.show_edit_item"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+        <li ng-repeat='item in home.items track by $index' ng-swipe-right="home.removeItem(item.id, $index)">
             <span class="home_item_name" ng-click="home.choose_item(item.id)">{{item.name}}</span>
-            <span><i class="fa fa-comment" aria-hidden="true"></i><span class="home_number_comments">{{item.comments.length}}</span></span>
-            <button ng-click="home.removeItem(item.id)" class="buttonDelete"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+            <span class="home_number_comments" ng-show="!show_delete">{{item.comments.length}}</span>
+            <button ng-click="home.removeItem(item.id, $index)" class="buttonDelete" ng-show="show_delete">Delete</button>
+            <div class="showDelete" ng-click="home.show_remove(show_delete=!show_delete)">
+            </div>
         </li>
     </ul>    
     <div class="btn_plus">
         <a href="#/createItem"><button class="button4">+</button></a>
     </div>   
-    <div class="add_comment" ng-show="show_edit_item">
-        <input type="text" class="inputCreate" placeholder="change name" ng-model='home.change_item.name'> <br>
-        <button class="buttonPurple" id="newColor3" ng-click='home.change_item_func(); show_edit_item = !show_edit_item'>></button> 
-    </div> 
 </div><!--home-->
     
