@@ -291,14 +291,10 @@ input{
     }
     .buttonDelete{
         min-height: 175px;
-    }
-    .button4 {
-      font-size: 90px;
-      padding: 20px 50px;
+        font-size: 50px;
     }
     .header{
-        height: 350px;
-        font-size: 50px;
+        height: 300px;
     }
     .header_span{
         font-size: 30px;
@@ -311,5 +307,17 @@ input{
     .inputCreate{
         height: 120px;
         font-size:50px; 
+    }
+    h1{
+        font-size: 80px;
+    }
+    h2{
+       font-size: 60px; 
+    }
+    .buttonBack{
+        font-size: 50px;
+    }
+    .fa-long-arrow-left{
+        font-size: 70px;
     }
 }
