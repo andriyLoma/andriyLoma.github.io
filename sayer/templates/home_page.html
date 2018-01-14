@@ -5,11 +5,13 @@
     </div>
     <ul>
         <li ng-repeat='item in home.items track by $index' ng-swipe-right="home.removeItem(item.id, $index)">
-            <span class="home_item_name" ng-click="home.choose_item(item.id)">{{item.name}}</span>
-            <span class="home_number_comments" ng-show="!show_delete">{{item.comments.length}}</span>
-            <button ng-click="home.removeItem(item.id, $index)" class="buttonDelete" ng-show="show_delete">Delete</button>
+            <span class="home_item_name" ng-click="home.show_remove(show_delete=!show_delete)">{{item.name}}</span>
+            <span class="home_number_comments animate" ng-show="!show_delete" ng-click="home.choose_item(item.id)">{{item.comments.length}}</span>
+            <button ng-click="home.removeItem(item.id, $index)" class="buttonDelete animate-show-hide" ng-show="show_delete">Delete</button>
+<!--
             <div class="showDelete" ng-click="home.show_remove(show_delete=!show_delete)">
             </div>
+-->
         </li>
     </ul>    
     <div class="btn_plus">

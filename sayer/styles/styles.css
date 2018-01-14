@@ -7,34 +7,17 @@ body{
 }
 .header{
     width: 100%;
-    background: rgba(4, 4, 66, 0.9);
+    background: #0E1D3C;
     color: white;
     height: 200px;
     display: flex;
     justify-content:flex-start;
     align-items:center;
+    font-weight:700;
 }
 .header_span{
     font-size: 20px;
     display: block;
-}
-.but_edit{
-    background:rgba(49, 49, 130, 0.9);
-	display: inline-block;
-    border-radius: 50%;
-    font-size: 25px;
-	height: 40px;
-    outline: none;
-    border: none;
-	cursor: pointer;
-	position: relative;
-	width: 40px;			
-	-webkit-transition: all .1s linear;
-	transition: all .1s linear;
-    color: white;
-}
-.but_edit:hover{
-    background-color: rgba(4, 4, 66, 0.9);
 }
 .btn_plus{
     display: flex;
@@ -46,25 +29,25 @@ body{
 .button4 {
   font-size: 70px;
   font-weight: 700;
-  color: rgb(241, 164, 197);
+  color: #F5A8F0;
   text-shadow: 0 -1px rgba(0,0,0,.1);
   text-decoration: none;
   padding: 10px 30px;
   outline: none;
   border: none;
   border-radius: 50px;
-  background: rgb(212, 28, 106);
+  background: #D4145A;
   left: 40px;
   box-shadow: 1px 1px 6px 1px rgb(50,50,50);
 }
 .button4:hover {
     cursor: pointer;
-    background: rgb(193, 17, 91);
-    color: rgb(241, 182, 207);
+    background: #c10449;
+    color: #F5A8F0;
 }
 .buttonDelete{
-    background:rgb(212, 28, 106);
-    font-size: 25px;
+    background:#D4145A;
+    font-size: 30px;
 	min-height: 100px;
     width: 200px;
     outline: none;
@@ -74,12 +57,13 @@ body{
 	-webkit-transition: all .1s linear;
 	transition: all .1s linear;
     color: white;
+    font-family: 'Open Sans';
 }
 .buttonDelete:hover{
-    background-color: rgba(4, 4, 66, 0.9);
+    background-color: #c10449;
 }
 .buttonPurple {
-    background:rgba(49, 49, 130, 0.9);
+    background:#313464;
 	display: inline-block;
     border-radius: 50%;
 	height: 90px;
@@ -93,7 +77,7 @@ body{
     color: white;
 }
 .buttonPurple:hover  { 
-    color:rgba(49, 49, 130, 0.9);
+    color:#0E1D3C;
     background-color:white; 
 }
 .buttonBack{
@@ -106,14 +90,20 @@ h1{
 h2{
     font-size: 40px;
 }
+.home li{
+    font-weight: 600;
+}
 li{
     display: inline-flex;
-    justify-content:flex-end;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     min-height: 100px;
     font-size: 25px;
     border-bottom: 1px solid #dedede;
+}
+input{
+    font-family: Arial, sans-serif;
 }
 .inputCreate{
     width: 85%;
@@ -133,20 +123,22 @@ li{
     cursor: pointer;
     display: flex;
     justify-content: flex-start;
-    margin-right: 20%;
+    align-items: flex-start;
     margin-left: 20px;
     flex-wrap: wrap;
     text-align: left;
     font-size: 40px;
+    color: #2B2F3E;
 }
 .home_item_name:hover{
-    color: rgba(16, 16, 134, 0.99);
+    color: #0E1D3C;
 }
 .comment_name{
-    width: 50%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     font-size: 34px;
+    margin-left: 10px;
 }
 .comment_name:hover{
     white-space:normal;
@@ -161,45 +153,52 @@ li{
     font-size: 40px;
 }
 .home_number_comments{
-    font-size: 30px;
+    font-size: 32px;
+    font-weight:600;
     color: white;
     width: 60px;
+    margin-left: 100px;
     height: 60px;
     border-radius: 50%;
-    background-color: rgba(4, 4, 66, 0.9);
+    background-color: #313464;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 50px;
+}
+.home_number_comments:hover{
+    background: #0E1D3C;
+    cursor: pointer;
 }
 .item li{
     margin: 25px 0;
     border-bottom: 1px solid #dedede;
     padding-bottom: 35px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    color: #666666;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .item_block{
     width: 90px;
     height: 90px;
-    background-color: rgba(4, 4, 66, 0.9);
+    background-color: #313464;
     margin-left: 20px;
 }
 .striped div{
-    background-color: rgba(172, 110, 183, 0.9);
+    background-color: #AF7D93;
 }
 .item li:last-child{
     margin-bottom: 100px;
 }
 .showDelete{
     width: 2%;
-    background-color: rgb(212, 28, 106);
+    background-color: #D4145A;
     min-height: 100px;
 }
 .add_comment_item{
     width: 100%;
-    height: 80px;
-    padding: 5px;
+    height: 110px;
     background-color: #eaeaea;
     position: fixed;
     bottom: 0%;
@@ -208,7 +207,7 @@ li{
     align-items: center;
 }
 .inputComment{
-   height: 60px;
+   height: 80px;
    width: 85%;
    margin: 30px;
     padding-left: 10px;
@@ -219,25 +218,26 @@ li{
     border:1px solid #BEBEBE;
 }
 .comment_buttonPurple{
-    height: 60px;
+    height: 80px;
     border-radius: 50%;
-    width: 60px;
+    width: 80px;
     color: white;
-    background-color: rgba(4, 4, 66, 0.9);
+    background-color: #313464;
     position: relative;
     border: none;
     font-size: 40px;
     margin-right: 10px;
 }
 .comment_buttonPurple:hover{
-    background-color:rgba(49, 49, 130, 0.9);
+    background-color:#0E1D3C;
 }
 #newColor{
     font-size: 50px;
     font-weight: bold;
+    margin-right: 15px;
 }
 #newColor:hover{
-    background-color: rgba(4, 4, 66, 0.9);
+    background-color: #0E1D3C;
     color: white;
 }
 #newColor3{
@@ -245,6 +245,35 @@ li{
     font-weight: bold;
 }
 #newColor3:hover{
-    background-color: rgba(4, 4, 66, 0.9);
+    background-color: #0E1D3C;
     color: white;
+}
+.animate-show-hide.ng-hide {
+  opacity: 0;
+}
+.animate.ng-hide {
+  opacity: 0;
+}
+.animate.ng-hide-remove{
+    transition: all linear 0.8s;
+    transition-delay: 0.2s;
+}
+.animate-show-hide.ng-hide-remove {
+  transition: all linear 1s;
+}
+@media screen and (max-width: 850px) {
+    .add_comment_item{
+        height: 160px;
+    }
+    .inputComment{
+       height: 120px;
+        font-size:40px; 
+    }
+    .comment_buttonPurple{
+        height: 120px;
+        width: 120px;
+    }
+    .item li:last-child{
+        margin-bottom: 130px;
+    }
 }
