@@ -35,7 +35,7 @@ body{
   padding: 10px 30px;
   outline: none;
   border: none;
-  border-radius: 50px;
+  border-radius: 50%;
   background: #D4145A;
   left: 40px;
   box-shadow: 1px 1px 6px 1px rgb(50,50,50);
@@ -319,5 +319,12 @@ input{
     }
     .fa-long-arrow-left{
         font-size: 70px;
+    }
+    #newColor{
+        font-size: 80px;
+    }
+    .button4{
+        font-size: 105px;
+        padding: 15px 45px;
     }
 }
