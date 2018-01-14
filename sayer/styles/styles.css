@@ -267,7 +267,7 @@ input{
     }
     .inputComment{
        height: 120px;
-       font-size:40px; 
+       font-size:50px; 
     }
     .comment_buttonPurple{
         height: 120px;
@@ -278,15 +278,38 @@ input{
         margin-bottom: 130px;
     }
     .home li{
-        min-height: 200px;
-        font-size: 50px;
+        min-height: 175px;
+        font-size: 40px;
     }
     .home_number_comments{
-    font-size: 64px;
-    width: 120px;
-    height: 120px;
+        font-size: 60px;
+        width: 100px;
+        height: 100px;
     }
     .home_item_name{
-    font-size: 80px;
+        font-size: 70px;
+    }
+    .buttonDelete{
+        min-height: 175px;
+    }
+    .button4 {
+      font-size: 90px;
+      padding: 20px 50px;
+    }
+    .header{
+        height: 350px;
+        font-size: 50px;
+    }
+    .header_span{
+        font-size: 30px;
+    }
+    .buttonPurple {
+	    height: 120px;
+	    width: 120px;
+        font-size: 80px;
+    }
+    .inputCreate{
+        height: 120px;
+        font-size:50px; 
     }
 }
