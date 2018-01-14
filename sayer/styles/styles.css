@@ -277,4 +277,16 @@ input{
     .item li:last-child{
         margin-bottom: 130px;
     }
+    .home li{
+        min-height: 200px;
+        font-size: 50px;
+    }
+    .home_number_comments{
+    font-size: 64px;
+    width: 120px;
+    height: 120px;
+    }
+    .home_item_name{
+    font-size: 80px;
+    }
 }
