@@ -267,11 +267,12 @@ input{
     }
     .inputComment{
        height: 120px;
-        font-size:40px; 
+       font-size:40px; 
     }
     .comment_buttonPurple{
         height: 120px;
         width: 120px;
+        font-size:40px;
     }
     .item li:last-child{
         margin-bottom: 130px;
