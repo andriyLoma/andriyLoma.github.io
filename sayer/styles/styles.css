@@ -261,7 +261,7 @@ input{
 .animate-show-hide.ng-hide-remove {
   transition: all linear 1s;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1200px) {
     .add_comment_item{
         height: 160px;
     }
