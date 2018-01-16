@@ -119,9 +119,12 @@ input{
 }
 ::-webkit-input-placeholder {color:rgba(0, 0, 0, 0.8);}
 .home_item_name{
+    text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	padding: 10px;
     width: 70%;
     cursor: pointer;
-    display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     margin-left: 20px;
@@ -190,11 +193,6 @@ input{
 }
 .item li:last-child{
     margin-bottom: 100px;
-}
-.showDelete{
-    width: 2%;
-    background-color: #D4145A;
-    min-height: 100px;
 }
 .add_comment_item{
     width: 100%;
